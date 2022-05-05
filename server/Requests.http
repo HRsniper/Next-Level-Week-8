@@ -1,0 +1,11 @@
+### Server running
+GET http://localhost:3333
+
+### Create feedback
+POST http://localhost:3333/feedbacks
+Content-Type: application/json
+
+{
+  "type": "BUG",
+  "comment": "This is a bug2"
+}
