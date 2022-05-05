@@ -6,14 +6,17 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "npx nodemon --verbose --watch ./src ./src/server.ts",
-    "docker:dev": "npx nodemon --legacy-watch --verbose --watch ./src ./src/server.ts"
+    "docker:dev": "npx nodemon --legacy-watch --verbose --watch ./src ./src/server.ts",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@swc/jest": "^0.2.20",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
+    "@types/jest": "^27.5.0",
     "@types/node": "^17.0.31",
     "@types/nodemailer": "^6.4.4",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
@@ -21,6 +24,7 @@
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.0.3",
     "nodemon": "^2.0.16",
     "prettier": "^2.6.2",
     "prisma": "^3.13.0",
