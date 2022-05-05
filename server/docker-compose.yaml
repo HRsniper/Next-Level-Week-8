@@ -13,4 +13,4 @@ services:
     # command:
     #   - "npm"
     #   - "run"
-    #   - "dev"
+    #   - "docker:dev"
