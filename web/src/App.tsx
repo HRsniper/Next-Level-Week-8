@@ -1,5 +1,5 @@
 import { Widget } from "./components/Widget";
-import { api } from "./utils/axiosInstance";
+import { api } from "./services/api";
 
 export function App() {
   api.get("/").then((res) => {
