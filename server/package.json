@@ -6,8 +6,10 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "npx nodemon --verbose --watch ./src ./src/server.ts",
+    "start": "node ./dist/server.js",
     "docker:dev": "npx nodemon --legacy-watch --verbose --watch ./src ./src/server.ts",
-    "test": "jest"
+    "test": "npx jest",
+    "deploy": "npx prisma migrate deploy && npm run start"
   },
   "keywords": [],
   "author": "",
